@@ -7,7 +7,10 @@
     "postinstall": "node ./decorate-angular-cli.js",
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "graph": "npx nx graph",
+    "test-common": "npx nx test common-ui",
+    "lint-common": "npx nx lint common-ui"
   },
   "private": true,
   "dependencies": {
