@@ -20,7 +20,8 @@
     "build-storybook": "nx build-storybook",
     "generate-story-common-ui": "nx g @nrwl/angular:stories common-ui",
     "test-tienda": "nx run tienda-e2e:e2e",
-    "chromatic": "npx chromatic --project-token=51a925d1a604"
+    "chromatic": "npx chromatic --project-token=51a925d1a604",
+    "serve-storybook": "concurrently \"nx build-storybook | npx http-server ./dist/storybook/tienda\" \" start http://127.0.0.1:8080\""
   },
   "private": true,
   "dependencies": {
