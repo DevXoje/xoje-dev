@@ -6,6 +6,7 @@ import { exampleProducts } from '@xoje-dev/products';
   template: `<!--
 <xoje-dev-nx-welcome></xoje-dev-nx-welcome>
 -->
+    <h1>Welcome {{ title }}</h1>
     <xoje-dev-banner title="Welcome to the store!"></xoje-dev-banner>
     <ul>
       <li *ngFor="let product of products">
@@ -15,4 +16,5 @@ import { exampleProducts } from '@xoje-dev/products';
 })
 export class AppComponent {
   products = exampleProducts;
+  title = 'tienda';
 }
